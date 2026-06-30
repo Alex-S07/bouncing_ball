@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="An interactive bouncing balls demo where colorful balls bounce infinitely inside a boundary box. Click to add new balls!" />
+  <title>Bouncing Balls Demo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page-wrapper">
+    <header class="header">
+      <h1 class="title">Bouncing Balls Demo</h1>
+      <p class="subtitle">Click anywhere inside the box to create a new ball</p>
+      <p class="ball-count">Balls: <span id="ball-count">20</span></p>
+    </header>
+
+    <main>
+      <div class="canvas-container" id="canvas-container">
+        <canvas id="canvas"></canvas>
+      </div>
+
+      <div class="controls">
+        <button id="btn-add" class="btn btn-add">+ Add Ball</button>
+        <button id="btn-clear" class="btn btn-clear">Clear All</button>
+        <button id="btn-pause" class="btn btn-pause">⏸ Pause</button>
+      </div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
